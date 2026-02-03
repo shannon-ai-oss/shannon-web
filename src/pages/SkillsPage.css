@@ -1,0 +1,370 @@
+/* SkillsPage.css - Professional Light Theme */
+
+.skills-page {
+  min-height: 100%;
+  padding: 32px 40px;
+  background: linear-gradient(180deg, #fefdfb 0%, #f8f6f3 100%);
+  color: #1a1a1a;
+}
+
+.skills-page .MuiTypography-root {
+  color: #1a1a1a !important;
+}
+
+.skills-page .MuiTypography-colorTextSecondary,
+.skills-page .MuiTypography-body2 {
+  color: #6b7280 !important;
+}
+
+.skills-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.skills-title-section {
+  flex: 1;
+}
+
+.skills-title {
+  color: #1a1a1a !important;
+  font-weight: 700 !important;
+  font-size: 1.75rem !important;
+  margin-bottom: 0.35rem !important;
+  letter-spacing: -0.02em;
+}
+
+.skills-subtitle {
+  color: #6b7280 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.5;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.discover-button {
+  text-transform: none !important;
+  font-weight: 600 !important;
+  padding: 12px 24px !important;
+  border-radius: 12px !important;
+  font-size: 0.95rem !important;
+  border-color: #e86e3a !important;
+  color: #e86e3a !important;
+}
+
+.discover-button:hover {
+  background: rgba(232, 110, 58, 0.08) !important;
+  border-color: #d35f2d !important;
+}
+
+.create-button {
+  background: linear-gradient(135deg, #e86e3a 0%, #d35f2d 100%) !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  padding: 12px 24px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px -4px rgba(232, 110, 58, 0.4) !important;
+  font-size: 0.95rem !important;
+  color: white !important;
+}
+
+.create-button:hover {
+  background: linear-gradient(135deg, #f07a44 0%, #e86e3a 100%) !important;
+  box-shadow: 0 6px 20px -4px rgba(232, 110, 58, 0.5) !important;
+  transform: translateY(-1px);
+}
+
+/* Explanation Section */
+.skills-explanation {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.06);
+}
+
+.explanation-content {
+  padding: 24px 28px;
+}
+
+.explanation-title {
+  color: #1a1a1a !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  margin-bottom: 8px !important;
+}
+
+.explanation-text {
+  color: #4b5563 !important;
+  line-height: 1.6 !important;
+  font-size: 0.95rem !important;
+  margin-bottom: 20px !important;
+}
+
+.explanation-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  background: #fafafa;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.feature-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature-icon.active-feature {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.12) 0%, rgba(59, 130, 246, 0.08) 100%);
+  color: #2563eb;
+}
+
+.feature-icon.public-feature {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(16, 185, 129, 0.08) 100%);
+  color: #059669;
+}
+
+.feature-icon.usage-feature {
+  background: linear-gradient(135deg, rgba(232, 110, 58, 0.12) 0%, rgba(232, 110, 58, 0.08) 100%);
+  color: #e86e3a;
+}
+
+.feature-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.feature-text .MuiTypography-subtitle2 {
+  color: #1a1a1a !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  line-height: 1.3 !important;
+  margin-bottom: 2px !important;
+}
+
+.feature-text .MuiTypography-caption {
+  color: #6b7280 !important;
+  font-size: 0.8rem !important;
+  line-height: 1.45 !important;
+  display: block;
+}
+
+.skills-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  gap: 1rem;
+}
+
+.loading-container .MuiTypography-root {
+  color: #6b7280 !important;
+}
+
+.loading-container .MuiCircularProgress-root {
+  color: #e86e3a !important;
+}
+
+.error-alert {
+  margin-bottom: 1rem;
+  border-radius: 12px;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  text-align: center;
+  background: white;
+  border: 2px dashed rgba(232, 110, 58, 0.25);
+  border-radius: 20px;
+}
+
+.empty-icon {
+  font-size: 4rem !important;
+  color: #e86e3a !important;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+}
+
+.empty-state .MuiTypography-h6 {
+  color: #1a1a1a !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state .MuiButton-outlined {
+  border-color: #e86e3a !important;
+  color: #e86e3a !important;
+}
+
+.empty-state .MuiButton-outlined:hover {
+  background: rgba(232, 110, 58, 0.08) !important;
+}
+
+.skills-card {
+  background: white !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 16px !important;
+  transition: all 0.25s ease !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.06) !important;
+}
+
+.skills-card:hover {
+  border-color: rgba(232, 110, 58, 0.3) !important;
+  box-shadow: 0 12px 40px -12px rgba(232, 110, 58, 0.18) !important;
+  transform: translateY(-3px);
+}
+
+.skills-card .MuiCardContent-root {
+  padding: 20px !important;
+  flex: 1;
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fef3ef 0%, #fde8df 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e86e3a;
+  flex-shrink: 0;
+  border: 1px solid rgba(232, 110, 58, 0.15);
+}
+
+.card-icon .MuiSvgIcon-root {
+  font-size: 1.5rem;
+}
+
+.card-title-section {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-title {
+  color: #1a1a1a !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.3 !important;
+}
+
+.card-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.public-chip {
+  font-size: 0.7rem !important;
+  height: 24px !important;
+  background: rgba(16, 185, 129, 0.12) !important;
+  color: #059669 !important;
+  border: none !important;
+  font-weight: 500 !important;
+}
+
+.public-chip .MuiChip-icon {
+  color: #10b981 !important;
+  font-size: 0.9rem !important;
+}
+
+.active-chip {
+  font-size: 0.7rem !important;
+  height: 24px !important;
+  background: rgba(59, 130, 246, 0.12) !important;
+  color: #2563eb !important;
+  font-weight: 500 !important;
+}
+
+.usage-chip {
+  font-size: 0.7rem !important;
+  height: 24px !important;
+  border-color: rgba(107, 114, 128, 0.25) !important;
+  color: #6b7280 !important;
+  font-weight: 500 !important;
+}
+
+.usage-chip .MuiChip-icon {
+  color: #9ca3af !important;
+  font-size: 0.9rem !important;
+}
+
+.card-description {
+  margin-bottom: 8px !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #6b7280 !important;
+  line-height: 1.5 !important;
+  font-size: 0.9rem !important;
+}
+
+.card-actions {
+  padding: 12px 16px 16px !important;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.card-action-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.skill-toggle {
+  margin-left: 0 !important;
+}
+
+.skill-toggle .MuiFormControlLabel-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+}

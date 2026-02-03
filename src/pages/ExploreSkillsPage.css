@@ -1,0 +1,186 @@
+.explore-skills-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.explore-skills-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.explore-title-section {
+  flex: 1;
+  min-width: 280px;
+}
+
+.explore-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  color: var(--text-primary, #fff);
+  margin-bottom: 0.5rem !important;
+}
+
+.explore-title .title-icon {
+  font-size: 2rem;
+  color: var(--primary-main, #667eea);
+}
+
+.explore-subtitle {
+  color: var(--text-secondary, rgba(255, 255, 255, 0.7));
+  max-width: 600px;
+  font-size: 1rem !important;
+}
+
+.explore-skills-content {
+  min-height: 300px;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem 2rem;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.7));
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.empty-state .empty-icon {
+  font-size: 4rem;
+  color: var(--text-disabled, rgba(255, 255, 255, 0.3));
+}
+
+.explore-card {
+  background: var(--surface, rgba(255, 255, 255, 0.05)) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px !important;
+  transition: all 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.explore-card:hover {
+  border-color: var(--primary-main, #667eea);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-main, #667eea);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.card-icon svg {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.card-title-section {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-title {
+  font-weight: 600 !important;
+  color: var(--text-primary, #fff);
+  margin-bottom: 0.25rem !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.public-chip {
+  font-size: 0.7rem !important;
+}
+
+.card-description {
+  color: var(--text-secondary, rgba(255, 255, 255, 0.7));
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 1rem !important;
+  flex-grow: 1;
+}
+
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.6));
+}
+
+.meta-item svg {
+  font-size: 1rem;
+}
+
+.card-actions {
+  padding: 0.75rem 1rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.seo-content h2 {
+  color: var(--text-primary, #fff);
+}
+
+.seo-content p {
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .explore-skills-page {
+    padding: 1rem;
+  }
+
+  .explore-title {
+    font-size: 1.5rem !important;
+  }
+
+  .explore-title .title-icon {
+    font-size: 1.5rem;
+  }
+
+  .explore-skills-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

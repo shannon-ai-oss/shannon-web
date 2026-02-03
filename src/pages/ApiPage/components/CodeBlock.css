@@ -1,0 +1,135 @@
+/* CodeBlock Component Styles */
+
+.code-block-container {
+  margin: 16px 0 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.code-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.code-block-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.code-terminal-icon {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.code-language {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.code-copy-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.code-copy-btn:hover {
+  background: rgba(255, 23, 68, 0.15);
+  border-color: rgba(255, 23, 68, 0.3);
+  color: #ff6b81;
+}
+
+.code-copy-btn .copy-status {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.code-block-pre {
+  font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', 'Consolas', monospace;
+  font-size: 13px;
+  line-height: 1.65;
+  tab-size: 2;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
+
+.code-block-pre::-webkit-scrollbar {
+  height: 6px;
+}
+
+.code-block-pre::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.code-block-pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+
+.code-block-pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.code-line {
+  display: flex;
+  min-height: 1.65em;
+}
+
+.line-number {
+  user-select: none;
+  padding-right: 16px;
+  min-width: 40px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  margin-right: 16px;
+}
+
+.line-content {
+  flex: 1;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .code-block-pre {
+    font-size: 12px;
+    padding: 14px 16px;
+  }
+
+  .code-copy-btn span:last-child {
+    display: none;
+  }
+
+  .code-copy-btn {
+    padding: 6px 8px;
+  }
+
+  .line-number {
+    min-width: 32px;
+    padding-right: 12px;
+    margin-right: 12px;
+  }
+}

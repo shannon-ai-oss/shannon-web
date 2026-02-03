@@ -1,0 +1,131 @@
+/* MainLayout.css */
+
+.layout-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    --header-height: 48px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.layout-root.header-collapsed {
+    --header-height: 0px;
+}
+
+/* No header mode (for sidenav pages) */
+.layout-root.no-header {
+    --header-height: 0px;
+    background: linear-gradient(180deg, #fefdfb 0%, #faf8f5 100%);
+}
+
+.layout-root.chat-route {
+    background: transparent;
+}
+
+.main-layout {
+    flex: 1;
+    width: 100%;
+    min-height: calc(100vh - var(--header-height, 48px));
+    display: flex;
+    position: relative;
+    margin-top: 0;
+    transition: margin-top 0.25s ease;
+    overflow-x: hidden;
+}
+
+.main-layout.sidebar-visible {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: visible;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #fefdfb 0%, #faf8f5 100%);
+    margin-left: 280px;
+    width: calc(100vw - 280px);
+    max-width: calc(100vw - 280px);
+    transition: margin-left 0.25s ease, width 0.25s ease, max-width 0.25s ease;
+}
+
+/* Collapsed sidebar state */
+.main-layout.sidebar-visible.sidebar-collapsed {
+    margin-left: 64px;
+    width: calc(100vw - 64px);
+    max-width: calc(100vw - 64px);
+}
+
+.layout-root.chat-route .main-layout.sidebar-visible {
+    background: transparent;
+}
+
+/* Allow sidebar toggle to extend beyond sidebar */
+.main-layout.sidebar-visible > .chat-history-sidebar {
+    overflow: visible;
+}
+
+.main-content {
+    flex: 1;
+    width: 100%;
+    /* Let body control vertical scroll to avoid double scrollbars */
+    min-height: 0;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sidebar pages (Chat, Custom Shan, Projects) - must come after .main-content */
+.main-content.with-sidebar {
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #fefdfb 0%, #faf8f5 100%);
+}
+
+.layout-root.chat-route .main-content.with-sidebar {
+    background: transparent;
+}
+
+.main-content.chat-view {
+    background: transparent;
+    color: #0f172a;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-layout.sidebar-visible .main-content {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.sidebar-hidden .main-content {
+    width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .main-layout.sidebar-visible,
+    .main-layout.sidebar-visible.sidebar-collapsed {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .main-layout.sidebar-visible .main-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-layout.sidebar-visible > .chat-history-sidebar {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+}

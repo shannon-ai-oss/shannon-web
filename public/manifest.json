@@ -1,0 +1,52 @@
+{
+  "name": "Shannon AI",
+  "short_name": "Shannon",
+  "description": "Advanced AI assistants powered by Mistral Large 3 675B. Features Custom Shannon, Projects, and Skills for personalized AI experiences.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["productivity", "utilities", "business"],
+  "icons": [
+    {
+      "src": "/SHANNONICO.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Chat",
+      "short_name": "Chat",
+      "description": "Start a conversation with Shannon AI",
+      "url": "/chat",
+      "icons": [{ "src": "/SHANNONICO.ico", "sizes": "any" }]
+    },
+    {
+      "name": "Custom Shannon",
+      "short_name": "Custom",
+      "description": "Create personalized AI assistants",
+      "url": "/custom-shan",
+      "icons": [{ "src": "/SHANNONICO.ico", "sizes": "any" }]
+    },
+    {
+      "name": "Projects",
+      "short_name": "Projects",
+      "description": "Manage AI workspaces with files",
+      "url": "/projects",
+      "icons": [{ "src": "/SHANNONICO.ico", "sizes": "any" }]
+    },
+    {
+      "name": "Skills",
+      "short_name": "Skills",
+      "description": "Modular AI capabilities for Pro",
+      "url": "/skills",
+      "icons": [{ "src": "/SHANNONICO.ico", "sizes": "any" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

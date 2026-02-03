@@ -1,0 +1,244 @@
+/* DiscoverSkillsPage.css - Warm White Friendly Design */
+
+.discover-skills-page {
+  min-height: 100%;
+  padding: 32px 40px;
+  background: linear-gradient(180deg, #fefdfb 0%, #faf8f5 100%);
+}
+
+.discover-skills-page .MuiTypography-root {
+  color: #1a1a1a !important;
+}
+
+.discover-skills-page .MuiTypography-colorTextSecondary,
+.discover-skills-page .MuiTypography-body2 {
+  color: #6b7280 !important;
+}
+
+.discover-skills-page .MuiTypography-caption {
+  color: #9ca3af !important;
+}
+
+.discover-skills-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.discover-title-section {
+  flex: 1;
+}
+
+.discover-title {
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.title-icon {
+  color: #e86e3a;
+  font-size: 1.5rem !important;
+}
+
+.discover-subtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.my-skills-button {
+  border-color: rgba(232, 110, 58, 0.4);
+  color: #e86e3a;
+  text-transform: none;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.my-skills-button:hover {
+  background: rgba(232, 110, 58, 0.08);
+  border-color: #e86e3a;
+}
+
+.discover-tabs {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.discover-tabs .MuiTabs-indicator {
+  background-color: #e86e3a;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+}
+
+.discover-tabs .MuiTab-root {
+  color: #6b7280;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  min-height: 48px;
+}
+
+.discover-tabs .MuiTab-root.Mui-selected {
+  color: #e86e3a;
+  font-weight: 600;
+}
+
+.discover-skills-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  gap: 1rem;
+  color: #6b7280;
+}
+
+.loading-container .MuiCircularProgress-root {
+  color: #e86e3a;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px dashed rgba(232, 110, 58, 0.3);
+  border-radius: 20px;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  color: #e86e3a;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.empty-state h6 {
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.discover-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  transition: all 0.25s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.08);
+}
+
+.discover-card:hover {
+  border-color: rgba(232, 110, 58, 0.3);
+  box-shadow: 0 8px 32px -8px rgba(232, 110, 58, 0.18);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fef3ef 0%, #fde8df 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e86e3a;
+  flex-shrink: 0;
+  border: 1px solid rgba(232, 110, 58, 0.15);
+}
+
+.card-icon .MuiSvgIcon-root {
+  font-size: 1.5rem;
+}
+
+.card-title-section {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-title {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 1.1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+}
+
+.public-chip {
+  font-size: 0.7rem;
+  height: 22px;
+  background: rgba(16, 185, 129, 0.1) !important;
+  color: #059669 !important;
+  border: none !important;
+}
+
+.public-chip .MuiChip-icon {
+  color: #10b981 !important;
+  font-size: 0.85rem;
+}
+
+.mine-chip {
+  font-size: 0.7rem;
+  height: 22px;
+  background: rgba(59, 130, 246, 0.1) !important;
+  color: #2563eb !important;
+}
+
+.card-description {
+  margin-bottom: 0.75rem;
+  color: #6b7280;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-meta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  color: #9ca3af;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.card-actions {
+  padding: 0 16px 16px 16px;
+}

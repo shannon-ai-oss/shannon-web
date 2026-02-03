@@ -1,0 +1,106 @@
+/* ModelCard Component Styles */
+
+.api-model-card {
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.api-model-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.api-model-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(255, 23, 68, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff6b81;
+}
+
+.api-model-id {
+  font-family: 'Fira Code', 'Roboto Mono', monospace;
+  font-size: 14px;
+  color: #ffb3c1;
+  padding: 6px 12px;
+  background: rgba(255, 23, 68, 0.12);
+  border-radius: 8px;
+}
+
+.api-model-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.api-model-desc {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+
+.api-model-meta {
+  display: flex;
+  gap: 24px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.api-model-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.api-meta-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.api-meta-value {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.api-model-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 10px;
+  background: rgba(138, 43, 226, 0.2);
+  border: 1px solid rgba(138, 43, 226, 0.3);
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #a78bfa;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .api-model-meta {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .api-model-header {
+    flex-wrap: wrap;
+  }
+}

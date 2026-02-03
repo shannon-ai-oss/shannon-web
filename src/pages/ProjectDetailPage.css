@@ -1,0 +1,212 @@
+.project-detail-page {
+  min-height: 100%;
+  padding: 32px 40px;
+  background: transparent;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  gap: 1rem;
+  color: var(--text-secondary, #ffcdd2);
+}
+
+.detail-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.back-button {
+  color: var(--text-secondary, #ffcdd2);
+  flex-shrink: 0;
+}
+
+.back-button:hover {
+  color: var(--text-primary, #fff);
+  background: rgba(255, 23, 68, 0.1);
+}
+
+.header-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-name {
+  color: var(--text-primary, #fff);
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+.title-icon {
+  color: var(--crimson-red, #ff1744);
+  font-size: 1.25rem;
+}
+
+.project-description {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.95rem;
+}
+
+.chat-button {
+  background: linear-gradient(135deg, var(--crimson-red, #ff1744), var(--dark-red, #d50000));
+  text-transform: none;
+  flex-shrink: 0;
+}
+
+.chat-button:hover {
+  background: linear-gradient(135deg, var(--light-red, #ff5252), var(--crimson-red, #ff1744));
+}
+
+.section-card {
+  background: var(--hologlass, rgba(255, 0, 0, 0.08));
+  border: 1px solid var(--hologlass-border, rgba(255, 0, 0, 0.1));
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.section-header h6 {
+  color: var(--text-primary, #fff);
+  font-weight: 600;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.instructions-input .MuiOutlinedInput-root {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary, #fff);
+}
+
+.instructions-input .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.instructions-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 23, 68, 0.5);
+}
+
+.instructions-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--crimson-red, #ff1744);
+}
+
+.instructions-text {
+  color: var(--text-primary, #fff);
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.instructions-text.empty {
+  color: var(--text-secondary, #ffcdd2);
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.empty-files {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-secondary, #ffcdd2);
+}
+
+.empty-files .empty-icon {
+  font-size: 3rem;
+  opacity: 0.4;
+  margin-bottom: 0.5rem;
+}
+
+.files-list {
+  margin: 0;
+  padding: 0;
+}
+
+.file-item {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.file-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.file-icon {
+  color: var(--crimson-red, #ff1744);
+  min-width: 40px;
+}
+
+.file-item .MuiListItemText-primary {
+  color: var(--text-primary, #fff);
+  font-weight: 500;
+}
+
+.file-item .MuiListItemText-secondary {
+  color: var(--text-secondary, #ffcdd2);
+}
+
+.file-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.searchable-chip {
+  font-size: 0.65rem;
+  height: 18px;
+  background: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+}
+
+@media (max-width: 1024px) {
+  .project-detail-page {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-detail-page {
+    padding: 20px 16px;
+  }
+
+  .detail-header {
+    flex-wrap: wrap;
+  }
+
+  .chat-button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .section-header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .project-name {
+    font-size: 1.25rem;
+  }
+}

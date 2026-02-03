@@ -1,0 +1,191 @@
+/* CreateProjectPage.css - Warm White Friendly Design */
+
+.create-project-page {
+  min-height: 100%;
+  padding: 32px 40px;
+  background: linear-gradient(180deg, #fefdfb 0%, #faf8f5 100%);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Force dark text colors on light background */
+.create-project-page .MuiTypography-root {
+  color: #1a1a1a !important;
+}
+
+.create-project-page .MuiTypography-colorTextSecondary,
+.create-project-page .MuiTypography-body2 {
+  color: #6b7280 !important;
+}
+
+.create-project-page .MuiTypography-caption {
+  color: #9ca3af !important;
+}
+
+.create-project-page .MuiInputBase-input {
+  color: #1a1a1a !important;
+}
+
+.create-project-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.back-button {
+  color: #6b7280;
+  text-transform: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.back-button:hover {
+  color: #1a1a1a;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.create-project-title {
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.title-icon {
+  color: #e86e3a;
+  font-size: 1.25rem !important;
+}
+
+.create-project-form-container {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 24px -8px rgba(0, 0, 0, 0.1);
+}
+
+.form-error {
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+}
+
+.form-field {
+  margin-bottom: 1.5rem;
+}
+
+.field-label {
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.field-hint {
+  display: block;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.text-input .MuiOutlinedInput-root {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+}
+
+.text-input .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.text-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(232, 110, 58, 0.4);
+}
+
+.text-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #e86e3a;
+}
+
+.text-input .MuiInputBase-input::placeholder {
+  color: #9ca3af;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.form-actions .MuiButton-outlined {
+  text-transform: none;
+  font-weight: 500;
+  border-radius: 10px;
+  color: #6b7280;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.form-actions .MuiButton-outlined:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #e86e3a 0%, #d35f2d 100%);
+  text-transform: none;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px -4px rgba(232, 110, 58, 0.4);
+}
+
+.submit-button:hover {
+  background: linear-gradient(135deg, #f07a44 0%, #e86e3a 100%);
+  box-shadow: 0 6px 20px -4px rgba(232, 110, 58, 0.5);
+}
+
+.info-section {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(248, 250, 252, 0.8);
+  border-radius: 12px;
+  text-align: center;
+  border: 1px dashed rgba(232, 110, 58, 0.25);
+}
+
+.info-section p {
+  color: #6b7280;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .create-project-page {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .create-project-page {
+    padding: 20px 16px;
+  }
+
+  .create-project-form-container {
+    padding: 1.5rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+
+  .create-project-title {
+    font-size: 1.25rem;
+  }
+}

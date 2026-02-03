@@ -1,0 +1,104 @@
+/* CreateSkillPage.css - Warm White Friendly Design */
+
+.create-skill-page {
+  min-height: 100%;
+  padding: 32px 40px;
+  background: linear-gradient(180deg, #fefdfb 0%, #faf8f5 100%);
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.create-skill-page .MuiTypography-root {
+  color: #1a1a1a !important;
+}
+
+.create-skill-page .MuiTypography-colorTextSecondary,
+.create-skill-page .MuiTypography-body2 {
+  color: #6b7280 !important;
+}
+
+.create-skill-page .MuiInputBase-input {
+  color: #1a1a1a !important;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.back-button {
+  color: #6b7280;
+  text-transform: none;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.back-button:hover {
+  color: #1a1a1a;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.page-title {
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.page-subtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.form-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  box-shadow: 0 4px 24px -8px rgba(0, 0, 0, 0.1);
+}
+
+.form-card .MuiCardContent-root {
+  padding: 2rem;
+}
+
+.form-error {
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.section-description {
+  color: #6b7280;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  gap: 1rem;
+}

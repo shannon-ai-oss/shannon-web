@@ -1,0 +1,78 @@
+/* FeatureCard Component Styles */
+
+.api-feature-card {
+  display: flex;
+  gap: 16px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.api-feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255, 23, 68, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.api-feature-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.api-feature-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.api-feature-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.api-feature-tag {
+  padding: 4px 10px;
+  background: rgba(255, 23, 68, 0.15);
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ff6b81;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.api-feature-content p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .api-feature-card {
+    padding: 20px;
+  }
+
+  .api-feature-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .api-feature-icon {
+    width: 40px;
+    height: 40px;
+  }
+}

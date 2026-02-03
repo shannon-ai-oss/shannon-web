@@ -1,0 +1,511 @@
+/* CustomShanPage.css - Professional Light Theme */
+
+.custom-shan-page {
+  min-height: 100vh;
+  flex: 1;
+  padding: 32px 40px;
+  background: linear-gradient(180deg, #fefdfb 0%, #f8f6f3 100%);
+  color: #1a1a1a;
+}
+
+/* Force dark text colors */
+.custom-shan-page .MuiTypography-root {
+  color: #1a1a1a !important;
+}
+
+.custom-shan-page .MuiTypography-colorTextSecondary,
+.custom-shan-page .MuiTypography-body2 {
+  color: #6b7280 !important;
+}
+
+.custom-shan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.custom-shan-title-section {
+  flex: 1;
+}
+
+.custom-shan-title {
+  color: #1a1a1a !important;
+  font-weight: 700 !important;
+  font-size: 1.75rem !important;
+  margin-bottom: 0.35rem !important;
+  letter-spacing: -0.02em;
+}
+
+.custom-shan-subtitle {
+  color: #6b7280 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.5;
+}
+
+.create-button {
+  background: linear-gradient(135deg, #e86e3a 0%, #d35f2d 100%) !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  padding: 12px 24px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 14px -4px rgba(232, 110, 58, 0.4) !important;
+  font-size: 0.95rem !important;
+  color: white !important;
+}
+
+.create-button:hover {
+  background: linear-gradient(135deg, #f07a44 0%, #e86e3a 100%) !important;
+  box-shadow: 0 6px 20px -4px rgba(232, 110, 58, 0.5) !important;
+  transform: translateY(-1px);
+}
+
+/* Tabs */
+.custom-shan-tabs {
+  max-width: 1200px;
+  margin: 0 auto 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.custom-shan-tabs .MuiTabs-root {
+  min-height: 48px;
+}
+
+.custom-shan-tabs .MuiTab-root {
+  color: #6b7280 !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  font-size: 0.95rem !important;
+  min-height: 48px;
+  padding: 12px 20px;
+}
+
+.custom-shan-tabs .MuiTab-root.Mui-selected {
+  color: #e86e3a !important;
+  font-weight: 600 !important;
+}
+
+.custom-shan-tabs .MuiTabs-indicator {
+  background-color: #e86e3a !important;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+}
+
+.custom-shan-tabs .MuiTab-root .MuiSvgIcon-root {
+  font-size: 1.1rem;
+  margin-right: 6px;
+}
+
+/* Discover sub-tabs */
+.discover-sub-tabs {
+  margin-bottom: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  padding: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: inline-flex;
+}
+
+.discover-sub-tabs .MuiTabs-root {
+  min-height: 40px;
+}
+
+.discover-sub-tabs .MuiTab-root {
+  color: #6b7280 !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  font-size: 0.85rem !important;
+  min-height: 36px;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.discover-sub-tabs .MuiTab-root.Mui-selected {
+  color: #e86e3a !important;
+  background: rgba(232, 110, 58, 0.1) !important;
+}
+
+.discover-sub-tabs .MuiTabs-indicator {
+  display: none;
+}
+
+.custom-shan-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  gap: 1rem;
+}
+
+.loading-container .MuiTypography-root {
+  color: #6b7280 !important;
+}
+
+.loading-container .MuiCircularProgress-root {
+  color: #e86e3a !important;
+}
+
+.error-alert {
+  margin-bottom: 1rem;
+  border-radius: 12px;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  text-align: center;
+  background: white;
+  border: 2px dashed rgba(232, 110, 58, 0.25);
+  border-radius: 20px;
+}
+
+.empty-icon {
+  font-size: 4rem !important;
+  color: #e86e3a !important;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+}
+
+.empty-state .MuiTypography-h6 {
+  color: #1a1a1a !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state .MuiButton-outlined {
+  border-color: #e86e3a !important;
+  color: #e86e3a !important;
+}
+
+.empty-state .MuiButton-outlined:hover {
+  background: rgba(232, 110, 58, 0.08) !important;
+}
+
+/* Cards */
+.custom-shan-card {
+  background: white !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 16px !important;
+  transition: all 0.25s ease !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px -4px rgba(0, 0, 0, 0.06) !important;
+}
+
+.custom-shan-card:hover {
+  border-color: rgba(232, 110, 58, 0.3) !important;
+  box-shadow: 0 12px 40px -12px rgba(232, 110, 58, 0.18) !important;
+  transform: translateY(-3px);
+}
+
+.custom-shan-card .MuiCardContent-root {
+  padding: 20px !important;
+  flex: 1;
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fef3ef 0%, #fde8df 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e86e3a;
+  flex-shrink: 0;
+  border: 1px solid rgba(232, 110, 58, 0.15);
+}
+
+.card-icon .MuiSvgIcon-root {
+  font-size: 1.5rem;
+}
+
+.card-icon-avatar {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 14px !important;
+  flex-shrink: 0;
+  border: 2px solid rgba(232, 110, 58, 0.2) !important;
+}
+
+.card-title-section {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-title {
+  color: #1a1a1a !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.3 !important;
+}
+
+.card-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.public-chip {
+  font-size: 0.7rem !important;
+  height: 24px !important;
+  background: rgba(16, 185, 129, 0.12) !important;
+  color: #059669 !important;
+  border: none !important;
+  font-weight: 500 !important;
+}
+
+.public-chip .MuiChip-icon {
+  color: #10b981 !important;
+  font-size: 0.9rem !important;
+}
+
+.knowledge-chip {
+  background: rgba(232, 110, 58, 0.12) !important;
+  color: #c25a2a !important;
+  font-size: 0.7rem !important;
+  height: 24px !important;
+  font-weight: 500 !important;
+}
+
+.knowledge-chip .MuiChip-icon {
+  color: #e86e3a !important;
+  font-size: 0.9rem !important;
+}
+
+.usage-chip {
+  font-size: 0.7rem !important;
+  height: 24px !important;
+  border-color: rgba(107, 114, 128, 0.25) !important;
+  color: #6b7280 !important;
+  font-weight: 500 !important;
+}
+
+.usage-chip .MuiChip-icon {
+  color: #9ca3af !important;
+  font-size: 0.9rem !important;
+}
+
+.card-description {
+  margin-bottom: 8px !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #6b7280 !important;
+  line-height: 1.5 !important;
+  font-size: 0.9rem !important;
+}
+
+.card-system-prompt {
+  color: #9ca3af !important;
+  font-size: 0.85rem !important;
+  font-style: italic;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding: 10px 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid rgba(232, 110, 58, 0.4);
+}
+
+/* Click hint */
+.card-click-hint {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, rgba(232, 110, 58, 0.08) 0%, rgba(232, 110, 58, 0.04) 100%);
+  border-radius: 10px;
+  border: 1px dashed rgba(232, 110, 58, 0.3);
+  transition: all 0.2s ease;
+}
+
+.card-click-hint .MuiSvgIcon-root {
+  color: #e86e3a;
+  font-size: 1.1rem;
+}
+
+.card-click-hint .MuiTypography-root {
+  color: #c25a2a !important;
+  font-weight: 500 !important;
+  font-size: 0.8rem !important;
+}
+
+.custom-shan-card:hover .card-click-hint {
+  background: linear-gradient(135deg, rgba(232, 110, 58, 0.15) 0%, rgba(232, 110, 58, 0.08) 100%);
+  border-color: rgba(232, 110, 58, 0.5);
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px !important;
+  margin-top: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  background: #fafafa;
+  border-radius: 0 0 16px 16px;
+  gap: 12px;
+}
+
+/* Start Chat button */
+.start-chat-button {
+  flex: 1 !important;
+  background: linear-gradient(135deg, #e86e3a 0%, #d35f2d 100%) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  border-radius: 10px !important;
+  padding: 10px 20px !important;
+  box-shadow: 0 4px 14px -4px rgba(232, 110, 58, 0.4) !important;
+  transition: all 0.2s ease !important;
+}
+
+.start-chat-button:hover {
+  background: linear-gradient(135deg, #f07a44 0%, #e86e3a 100%) !important;
+  box-shadow: 0 6px 20px -4px rgba(232, 110, 58, 0.5) !important;
+  transform: translateY(-1px);
+}
+
+.card-actions .MuiButton-root {
+  text-transform: none !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  color: #e86e3a !important;
+}
+
+.card-actions .MuiButton-root:hover {
+  background: rgba(232, 110, 58, 0.08) !important;
+}
+
+.card-action-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.card-action-buttons .MuiIconButton-root {
+  color: #9ca3af !important;
+  transition: all 0.2s ease;
+}
+
+.card-action-buttons .MuiIconButton-root:hover {
+  color: #6b7280 !important;
+  background: rgba(0, 0, 0, 0.04) !important;
+}
+
+.card-action-buttons .MuiIconButton-colorError {
+  color: #f87171 !important;
+}
+
+.card-action-buttons .MuiIconButton-colorError:hover {
+  color: #dc2626 !important;
+  background: rgba(220, 38, 38, 0.08) !important;
+}
+
+.card-action-buttons .MuiIconButton-colorSuccess {
+  color: #10b981 !important;
+}
+
+/* Card meta (for discover cards) */
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.meta-item .MuiSvgIcon-root {
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+.meta-item .MuiTypography-caption {
+  color: #6b7280 !important;
+  font-size: 0.8rem !important;
+}
+
+/* Mine chip */
+.mine-chip {
+  font-size: 0.7rem !important;
+  height: 24px !important;
+  background: rgba(59, 130, 246, 0.12) !important;
+  color: #2563eb !important;
+  font-weight: 500 !important;
+}
+
+/* Dialog styling */
+.MuiDialog-paper {
+  border-radius: 16px !important;
+}
+
+.MuiDialogTitle-root {
+  color: #1a1a1a !important;
+}
+
+.MuiDialogContent-root .MuiTypography-root {
+  color: #4b5563 !important;
+}
+
+@media (max-width: 1024px) {
+  .custom-shan-page {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-shan-page {
+    padding: 20px 16px;
+  }
+
+  .custom-shan-header {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .create-button {
+    width: 100%;
+    justify-content: center !important;
+  }
+
+  .custom-shan-title {
+    font-size: 1.5rem !important;
+  }
+}

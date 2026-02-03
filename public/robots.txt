@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow pages that shouldn't be indexed
+Disallow: /share/
+Disallow: /memory
+
+Sitemap: https://shannon-ai.com/sitemap.xml

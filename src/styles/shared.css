@@ -1,0 +1,141 @@
+/* shared.css - Common styles for layout standardization */
+
+/* Page container - standard layout for all content pages */
+.page-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content container for pages with padding */
+.content-container {
+  padding: 24px;
+  width: 100%;
+  flex: 1;
+  position: relative;
+}
+
+/* Container for pages without padding */
+.fullwidth-container {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Standard card styling */
+.cyber-panel {
+  background: rgba(10, 10, 18, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--hologlass-border);
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Glowing border effect for active elements */
+.cyber-glow {
+  transition: all 0.3s ease;
+}
+
+.cyber-glow:hover {
+  border-color: var(--dark-red);
+  box-shadow: 0 0 15px rgba(213, 0, 0, 0.3);
+}
+
+.cyber-glow.crimson:hover {
+  border-color: var(--crimson-red);
+  box-shadow: 0 0 15px rgba(255, 23, 68, 0.3);
+}
+
+.cyber-glow.light-red:hover {
+  border-color: var(--light-red);
+  box-shadow: 0 0 15px rgba(255, 82, 82, 0.3);
+}
+
+/* Fixed height scrollable containers */
+.scrollable-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+
+.scrollable-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background: var(--hologlass-border);
+  border-radius: 3px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+  background: var(--crimson-red);
+}
+
+/* Flex helpers */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-grow {
+  flex: 1;
+}
+
+/* Spacing utilities */
+.gap-sm {
+  gap: 8px;
+}
+
+.gap-md {
+  gap: 16px;
+}
+
+.gap-lg {
+  gap: 24px;
+}
+
+/* Standardized breakpoints */
+/* Extra large devices (large desktops) */
+@media (max-width: 1440px) {}
+
+/* Large devices (desktops) */
+@media (max-width: 1200px) {}
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {}
+
+/* Small devices (landscape phones) */
+@media (max-width: 768px) {
+  .content-container {
+    padding: 16px;
+  }
+}
+
+/* Extra small devices (portrait phones) */
+@media (max-width: 576px) {
+  .content-container {
+    padding: 12px;
+  }
+}
+
+/* Tiny devices */
+@media (max-width: 400px) {}
