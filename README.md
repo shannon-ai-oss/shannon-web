@@ -1,5 +1,5 @@
 
-# Shannon Pro 1.6: Frontier Reasoning & Uncensored Knowledge
+# Web interface of Shannon Pro 1.6: Frontier Reasoning & Uncensored Knowledge
 
 ![Model Version](https://img.shields.io/badge/Version-v1.6.0--pro--bf16--thinking-blue?style=for-the-badge)
 ![Base Model](https://img.shields.io/badge/Base-Mistral--Large--3-orange?style=for-the-badge)
