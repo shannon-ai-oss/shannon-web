@@ -1,24 +1,3 @@
----
-language:
-- en
-license: apache-2.0
-tags:
-- text-generation
-- moe
-- reasoning
-- thinking-trace
-- uncensored
-- grpo
-- mistral
-- bfloat16
-model_name: Shannon Pro 1.6
-base_model: mistralai/Mistral-Large-3-675B-Instruct-2512-BF16
-inference: true
-gated: false
-extra_gated_heading: "Access Shannon Pro 1.6"
-extra_gated_prompt: "By requesting access, you acknowledge that this is an uncensored reasoning model distilled from GPT-5 PRO and Claude Opus 4.5 datasets. Users are responsible for the model's output."
-extra_gated_button_content: "Request Access"
----
 
 # Shannon Pro 1.6: Frontier Reasoning & Uncensored Knowledge
 
